@@ -41,14 +41,14 @@
         android:layout_below="@+id/password" >
 
         <RadioButton
-            android:id="@+id/userRadioButton"
+            android:id="@+id/patientRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Γιατρός"
             android:textColor="#FF48836A" />
 
         <RadioButton
-            android:id="@+id/adminRadioButton"
+            android:id="@+id/doctorRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ασθενής"

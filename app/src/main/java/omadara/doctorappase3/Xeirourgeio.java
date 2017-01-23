@@ -5,12 +5,14 @@ package omadara.doctorappase3;
  */
 
 public class Xeirourgeio implements Availables{
+    private String name;
     private String hour;
     private String date;
     private boolean reserved;
     private String difficulty;
-    public Xeirourgeio(String hour, String date, boolean reserved, String difficulty) {
+    public Xeirourgeio(String name, String hour, String date, boolean reserved, String difficulty) {
         super();
+        this.name = name;
         this.hour = hour;
         this.date = date;
         this.reserved = reserved;
@@ -23,11 +25,10 @@ public class Xeirourgeio implements Availables{
     public void setDate() {
         this.date = date;
     }
-
+    public void setName() { this.name = name; }
     public void setReservation() {
         this.reserved = reserved;
     }
-
     public void setDifficulty() {
         this.difficulty = difficulty;
     }
@@ -35,7 +36,7 @@ public class Xeirourgeio implements Availables{
     public String getDifficulty() {
         return difficulty;
     }
-
+    public String getName() { return name; }
     public String getHour() {
         return hour;
     }
@@ -43,7 +44,7 @@ public class Xeirourgeio implements Availables{
         return date;
     }
 
-    public boolean getReservation() {
+    public Boolean getReservation() {
         return reserved;
     }
 }

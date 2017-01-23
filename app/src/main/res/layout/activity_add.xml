@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="omadara.doctorappase3.AddActivity">
 
-    <ScrollView
+    <RelativeLayout
         android:id="@+id/scroller"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -22,6 +22,11 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/avname"/>
 
             <DatePicker
                 android:id="@+id/date"
@@ -40,7 +45,7 @@
             </RadioGroup>
 
             <RadioButton
-                android:id="@+id/theaterRB"
+                android:id="@+id/xeirRB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Χειρουργείο"
@@ -50,12 +55,12 @@
                 android:layout_centerHorizontal="true" />
 
             <RadioButton
-                android:id="@+id/concertRB"
+                android:id="@+id/epRB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Επίσκεψη"
                 android:textColor="#FF48836A"
-                android:layout_alignTop="@+id/theaterRB"
+                android:layout_alignTop="@+id/xeirRB"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="39dp" />
 
@@ -63,7 +68,7 @@
                 android:id="@+id/hours_spinner"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/theaterRB"
+                android:layout_above="@+id/xeirRB"
                 android:layout_alignLeft="@+id/date"
                 android:layout_alignStart="@+id/date"
                 android:layout_marginBottom="29dp" />
@@ -78,7 +83,7 @@
                 android:textColor="#FF48836A"/>
 
         </RelativeLayout>
-    </ScrollView>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/confirm"
