@@ -38,10 +38,17 @@ public class CustomAdapter extends ArrayAdapter<Availables>{
 
         if(convertView == null) {
             LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+<<<<<<< HEAD
             convertView = vi.inflate(R.layout.bridge_listview, null);
             holder = new ViewHolder();
             holder.reserved= (CheckBox) convertView.findViewById(R.id.reserved);
             holder.code = (TextView) convertView.findViewById(R.id.avs_info);
+=======
+            convertView = vi.inflate(R.layout.listview_layout, null);
+            holder = new ViewHolder();
+            holder.reserved= (CheckBox) convertView.findViewById(R.id.reserved);
+            holder.code = (TextView) convertView.findViewById(R.id.events_info);
+>>>>>>> 319af5e4196ee0d035f9359a92be54704cc2207d
             convertView.setTag(holder);
 
             holder.reserved.setOnClickListener(new OnClickListener() {
@@ -58,7 +65,11 @@ public class CustomAdapter extends ArrayAdapter<Availables>{
             holder = (ViewHolder) convertView.getTag();
         }
         Availables available = list.get(position);
+<<<<<<< HEAD
         holder.code.setText(" (" +  available.getName() + ")");
+=======
+        holder.code.setText(" (" +  available.getAvailablesName() + ")");
+>>>>>>> 319af5e4196ee0d035f9359a92be54704cc2207d
         holder.attend.setChecked(available.getReservation());
         holder.attend.setTag(available);
         return convertView;
