@@ -28,7 +28,7 @@ public class CustomAdapterAdmin extends ArrayAdapter<AdminItem>{
 
     private class ViewHolder {
         TextView code;
-        CheckBox attend;
+        CheckBox reserved;
     }
 
 }

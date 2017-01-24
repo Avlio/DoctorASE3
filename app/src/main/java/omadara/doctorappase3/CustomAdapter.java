@@ -66,8 +66,8 @@ public class CustomAdapter extends ArrayAdapter<Availables>{
         holder.code.setText(" (" +  available.getName() + ")");
 
         holder.code.setText(" (" +  available.getName() + ")");
-        holder.attend.setChecked(available.getReservation());
-        holder.attend.setTag(available);
+        holder.reserved.setChecked(available.getReservation());
+        holder.reserved.setTag(available);
         return convertView;
     }
 }
