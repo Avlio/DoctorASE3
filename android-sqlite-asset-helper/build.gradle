@@ -1,5 +1,6 @@
 configurations.maybeCreate("default")
 artifacts.add("default", file('android-sqlite-asset-helper.jar'))
 dependencies {
+    compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     compile project(':app')
 }

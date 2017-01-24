@@ -28,6 +28,8 @@ public class AsthenisActivity extends Activity {
     private static final String DATABASE_NAME = "softeng.db";
     private static final int DATABASE_VERSION = 1;
 
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asthenis);
